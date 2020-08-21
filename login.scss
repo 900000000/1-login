@@ -1,0 +1,218 @@
+*
+{
+    box-sizing:border-box;
+    margin:0px;
+    padding:0px;
+}
+
+body
+{
+width:100vw;
+height:100vh;
+display: flex;
+align-items: center;
+justify-content:center;
+background:black;
+}
+
+.box
+{
+
+ width:400px;
+ height: 500px;
+ position: relative;
+ display:grid;
+ grid-template-columns:1fr;
+ grid-template-rows:150px 300px 45px;
+ background:inherit;
+ 
+
+.add
+{
+    grid-row:1/2;
+    overflow:hidden;
+    transform:translateY(150px);
+    transition:transform 1s linear;
+    
+
+    #photo
+    {
+        position:relative;
+        width:100%;
+        height:100%;
+        animation:scroll 20s linear infinite;
+        display:flex;
+        img{
+
+            position:relative;
+            width:400px;
+            height:150px;
+        
+        }
+    }
+   
+}
+#photo::-webkit-scrollbar
+    {
+        display:none;
+    }
+
+    @keyframes scroll {
+
+        0%{
+            transform:translateX(0px);
+        }
+    
+        50%
+        {
+            transform:translateX(-1200px);
+        }
+
+        100%
+        {
+            transform:translateX(0px);
+        }
+        
+        
+    }
+
+.log
+{
+    grid-row:2/3;
+    display: block;
+    overflow:hidden;
+    z-index:+9999;
+    box-shadow: -1px 2px 10px 15px rgb(78, 74, 74);
+    .dabaa
+    {
+        position:relative;
+        width:100%;
+        height:300px;
+        transition:transform 1s linear;
+        .optionface
+    {
+        position:relative;
+        width:100%;
+        height:300px;
+        display:block;
+        text-align:center;
+        background:white;
+        img
+        {
+            top:15%;
+            position: relative;
+            width:50%;
+            height:50%;
+            border-radius:50%;
+        }
+
+        a
+        {
+            top:25%;
+            position: relative;
+            display:inline-block;
+            box-shadow: -1px 14px 14px -7px #276873;
+            background:black;
+           
+            border-radius:16px;
+	        display:inline-block;
+	        cursor:pointer;
+	        color:#ffffff;
+	        font-family:Arial;
+	       font-size:16px;
+	        font-weight:bold;
+	        padding:14px 28px;
+	        text-decoration:none;
+            margin-right:25px;
+            margin-left:25px;
+	
+        }
+
+        a:hover {
+            
+            background-color:rgb(56, 49, 50);
+        }
+        a:active {
+            position:relative;
+            top:24.4%;
+        }
+    }
+
+    form{
+        display:block; 
+        text-align:center;
+        padding-top:15%;
+        position: relative;
+        width:100%;
+        height:300px;
+        background:white;
+
+        i
+        {
+            position:absolute;
+            top:10px;
+            left:10px;
+        }
+
+        input[type=text], input[type=password]
+        {
+            width:70%;
+            height:30px;
+            position: relative;
+            margin-bottom:10%;
+            font-size:14px;
+            border:none;
+            outline:none;
+            background:inherit;
+            border-bottom:2px solid black;
+        }
+
+        input[type=submit]
+        { width:70%;
+            height:30px;
+            position: relative;
+            margin-bottom:10%;
+            font-size:14px;
+            box-shadow:inset 0px 1px 20px 3px #000000;
+	        background:linear-gradient(to bottom, #161a19 5%, #5c535c 100%);
+            background-color:#161a19;
+            color:white;
+
+            &:hover
+            {
+                background:linear-gradient(to bottom, #5c535c 5%, #161a19 100%);
+	            background-color:#5c535c;
+            }
+
+        }
+
+        
+
+        a
+        {
+            text-decoration:none;
+            color:red;
+          
+        }
+    }
+}
+}
+
+
+
+
+.name
+{
+    grid-row:3/4;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    font-style:'Courier New';
+    letter-spacing: 1px;
+    color:black;
+    background:whitesmoke;
+    transform:translateY(-50px);
+    transition:transform 1s linear;
+   
+}
+}
